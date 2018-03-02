@@ -1,4 +1,4 @@
-# MeanShiftImageSeg
+# Mean Shift Image Segmentation
 A Naive Implementation of MeanShift Image Segmentation
 
 MeanShift algorithm is basically a method of finding modes in a feature space with making no assumptions about the probability distributions. For color images a typical feature space is a 5-dimensional space of three color components and two pixel coordinates.

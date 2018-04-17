@@ -69,7 +69,7 @@ int main( int argc, char** argv )
    }
 
    cv::Mat segmentedImage;
-   MeanShift<5> meanShift;
+   MeanShift<3> meanShift;
    std::vector<MeanShift<5>::fsPoint> fsPointSet;
    meanShift.setInputImage(imageL1);
    meanShift.createFeatureSpace();

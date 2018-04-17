@@ -80,7 +80,11 @@ public:
          for(int col = 0; col < imageLuv.cols; col++)
          {
             cv::Vec3b Luv = imageLuv.at<cv::Vec3b>(row, col);
-            _fsPointSet.push_back(fsPoint(Luv[0], Luv[1], Luv[2], row, col));
+            if(fsDim == 5)
+               _fsPointSet.push_back(fsPoint(Luv[0], Luv[1], Luv[2], row, col));
+            else
+            if(fsDim == 3)
+               _fsPointSet.push_back(fsPoint(Luv[0], Luv[1], Luv[2]));
          }
       }
 
